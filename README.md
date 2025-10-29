@@ -30,15 +30,8 @@
         h1 {
             font-size: 2.2em;
             font-weight: 400;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
             color: #2c3e50;
-        }
-
-        .subtitle {
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 8px;
-            font-weight: 300;
         }
 
         nav {
@@ -171,9 +164,6 @@
 <body>
     <header>
         <h1>Mohamed</h1>
-        <div class="subtitle">Titre / Poste</div>
-        <div class="subtitle">Département / Organisation</div>
-        <div class="subtitle">Institution / Université</div>
         
         <nav>
             <a href="#about">À propos</a>
@@ -260,7 +250,7 @@
             <p><strong>Téléphone :</strong> +1 (XXX) XXX-XXXX</p>
             <p><strong>Adresse :</strong> Département, Institution, Adresse complète</p>
             <p style="margin-top: 15px;">
-                <a href="#" target="_blank">GitHub</a> | 
+                <a href="https://github.com/mohamed28" target="_blank">GitHub</a> | 
                 <a href="#" target="_blank">Google Scholar</a> | 
                 <a href="#" target="_blank">LinkedIn</a> | 
                 <a href="#" target="_blank">ORCID</a>
