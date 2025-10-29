@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Votre Nom - Page Professionnelle</title>
+    <title>Mohamed - Page Professionnelle</title>
     <style>
         * {
             margin: 0;
@@ -170,7 +170,7 @@
 </head>
 <body>
     <header>
-        <h1>Votre Nom</h1>
+        <h1>Mohamed</h1>
         <div class="subtitle">Titre / Poste</div>
         <div class="subtitle">Département / Organisation</div>
         <div class="subtitle">Institution / Université</div>
@@ -260,16 +260,16 @@
             <p><strong>Téléphone :</strong> +1 (XXX) XXX-XXXX</p>
             <p><strong>Adresse :</strong> Département, Institution, Adresse complète</p>
             <p style="margin-top: 15px;">
-                <a href="https://github.com/votre-username" target="_blank">GitHub</a> | 
-                <a href="https://scholar.google.com" target="_blank">Google Scholar</a> | 
-                <a href="https://www.linkedin.com/in/votre-profil" target="_blank">LinkedIn</a> | 
-                <a href="https://orcid.org/" target="_blank">ORCID</a>
+                <a href="#" target="_blank">GitHub</a> | 
+                <a href="#" target="_blank">Google Scholar</a> | 
+                <a href="#" target="_blank">LinkedIn</a> | 
+                <a href="#" target="_blank">ORCID</a>
             </p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Votre Nom. Tous droits réservés.</p>
+        <p>&copy; 2025 Mohamed. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
