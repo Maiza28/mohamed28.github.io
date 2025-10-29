@@ -176,10 +176,10 @@
     <section id="about">
         <h2>À propos</h2>
         <p>
-            Je suis un doctorant en mathématiques à l'université de Sherbrooke. Mes travaux se  sur [domaine principal]. 
-            Précédemment, j'ai été [poste précédent] à [institution précédente] dans le groupe de [nom du superviseur/collaborateur]. 
-            Avant cela, j'ai obtenu mon [diplôme] à [université] sous la supervision de [nom du superviseur].
-        </p>
+    Je suis un doctorant en mathématiques à l'université de Sherbrooke. Mes travaux se concentrent sur [domaine principal]. 
+    Précédemment, j'ai été [poste précédent] à [institution précédente] dans le groupe de [nom du superviseur/collaborateur]. 
+    Avant cela, j'ai obtenu mon [diplôme] à [université] sous la supervision de [nom du superviseur].
+       </p>
     </section>
 
     <section id="research">
