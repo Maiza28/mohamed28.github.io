@@ -80,6 +80,14 @@
         a:hover {
             text-decoration: underline;
         }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin-right: 15px;
+        }
     </style>
 </head>
 <body>
@@ -89,12 +97,18 @@
         <div class="university">University of Sherbrooke</div>
     </header>
 
-    <section>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#research">Research</a>
+    </nav>
+
+    <section id="about">
         <h2>About</h2>
         <p>I'm a doctoral student in mathematics at the <a href="https://www.usherbrooke.ca/">University of Sherbrooke</a> under the supervision of <a href="https://math.usherbrooke.ca/jpburelle/">Jean-Philippe Burelle</a> and <a href="https://www.usherbrooke.ca/mathematiques/nous-joindre/personnel/corps-professoral/professeurs/maxence-mayrand">Maxence Mayrand</a>.</p>
     </section>
 
-    <section>
+    <section id="contact">
         <h2>Contact Information</h2>
         <p>
             <a href="mailto:mohamed.moussadek.maiza@usherbrooke.ca">mohamed.moussadek.maiza@usherbrooke.ca</a><br>
@@ -102,7 +116,7 @@
         </p>
     </section>
 
-    <section>
+    <section id="research">
         <h2>Research Interests</h2>
         <p>
             Topological quantum field theory, deformation spaces, differential geometry, complex geometry, hyperkähler geometry, moduli spaces.
