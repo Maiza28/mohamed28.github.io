@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Maiza - PhD Student</title>
+    <title>Mohamed Maiza</title>
     <style>
         * {
             margin: 0;
@@ -12,172 +12,109 @@
         }
         
         body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            line-height: 1.7;
-            color: #333;
-            background: #ffffff;
-            max-width: 800px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #000;
+            background-color: #fff;
+            max-width: 700px;
             margin: 0 auto;
-            padding: 60px 40px;
+            padding: 60px 30px;
         }
         
         header {
             margin-bottom: 50px;
-            display: flex;
-            align-items: flex-start;
-            gap: 40px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #d0d0d0;
         }
         
         .profile-image {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            flex-shrink: 0;
-            border: 1px solid #d0d0d0;
-        }
-        
-        .header-content {
-            flex: 1;
-            padding-top: 10px;
+            float: left;
+            width: 200px;
+            height: auto;
+            margin-right: 30px;
+            margin-bottom: 20px;
         }
         
         h1 {
-            font-size: 2.2em;
-            font-weight: 400;
-            margin-bottom: 12px;
-            color: #1a1a1a;
-            letter-spacing: -0.5px;
-        }
-        
-        .subtitle {
-            font-size: 1.1em;
-            color: #555;
-            margin-bottom: 6px;
-            font-style: italic;
-        }
-        
-        .university {
-            font-size: 1em;
-            color: #666;
-        }
-        
-        nav {
-            margin-bottom: 50px;
-        }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        }
-        
-        nav a {
-            color: #2b5797;
-            text-decoration: none;
-            font-size: 1em;
-            font-weight: 500;
-            transition: color 0.2s ease;
-            padding-bottom: 2px;
-            border-bottom: 2px solid transparent;
-        }
-        
-        nav a:hover {
-            color: #1a3a5f;
-            border-bottom-color: #2b5797;
-        }
-        
-        section {
-            margin-bottom: 50px;
-        }
-        
-        h2 {
-            font-size: 1.5em;
-            font-weight: 400;
+            font-size: 32px;
+            font-weight: normal;
             margin-bottom: 20px;
-            color: #1a1a1a;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: #000;
         }
         
-        p {
-            color: #333;
-            margin-bottom: 15px;
-            font-size: 1.05em;
+        .intro {
             text-align: justify;
+            margin-bottom: 20px;
+        }
+        
+        .intro p {
+            margin-bottom: 15px;
         }
         
         a {
-            color: #2b5797;
+            color: #00e;
             text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.2s ease;
         }
         
         a:hover {
-            border-bottom-color: #2b5797;
+            text-decoration: underline;
         }
         
-        .contact-info {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        }
-        
-        .contact-info a {
+        .cv-link {
             display: block;
-            margin-bottom: 8px;
-            color: #2b5797;
+            margin: 20px 0;
         }
         
-        footer {
-            margin-top: 80px;
-            padding-top: 20px;
-            border-top: 1px solid #d0d0d0;
-            text-align: center;
-            color: #888;
-            font-size: 0.9em;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        h2 {
+            font-size: 20px;
+            font-weight: normal;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        
+        .contact-table {
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        
+        .contact-table td {
+            padding: 5px 20px 5px 0;
+            vertical-align: top;
+        }
+        
+        .contact-table td:first-child {
+            font-weight: normal;
+            text-align: left;
+            white-space: nowrap;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
         }
         
         @media (max-width: 768px) {
             body {
-                padding: 40px 25px;
-            }
-            
-            header {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                gap: 25px;
+                padding: 40px 20px;
             }
             
             .profile-image {
-                width: 150px;
-                height: 150px;
+                float: none;
+                display: block;
+                margin: 0 auto 30px;
+                max-width: 100%;
             }
             
             h1 {
-                font-size: 1.8em;
-            }
-            
-            nav ul {
-                flex-direction: column;
-                gap: 15px;
-                align-items: center;
-            }
-            
-            p {
-                text-align: left;
+                text-align: center;
             }
         }
         
         @media print {
             body {
                 padding: 20px;
-            }
-            
-            nav {
-                display: none;
             }
             
             a {
@@ -188,37 +125,47 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="clearfix">
         <img src="./Maiza Mohamed.jpg" alt="Mohamed Maiza" class="profile-image">
-        <div class="header-content">
-            <h1>Mohamed Maiza</h1>
-            <div class="subtitle">PhD Student in Mathematics</div>
-            <div class="university">University of Sherbrooke</div>
+        
+        <h1>Mohamed Maiza</h1>
+        
+        <div class="intro">
+            <p>I am a doctoral student in mathematics at the <a href="https://www.usherbrooke.ca/">University of Sherbrooke</a> under the supervision of <a href="https://math.usherbrooke.ca/jpburelle/">Jean-Philippe Burelle</a> and <a href="https://www.usherbrooke.ca/mathematiques/nous-joindre/personnel/corps-professoral/professeurs/maxence-mayrand">Maxence Mayrand</a>.</p>
+            
+            <p>My area of research is symplectic geometry and topological quantum field theories. I'm particularly interested in Lax-Kirchhoff moduli spaces and their connections to quasi-Hamiltonian and Hamiltonian structures.</p>
+        </div>
+        
+        <div class="cv-link">
+            Here is my <a href="Cv.html">CV</a>.
         </div>
     </header>
     
-    <nav>
-        <ul>
-            <li><a href="Research.html">Research</a></li>
-            <li><a href="Cv.html">CV</a></li> 
-        </ul>    
-    </nav>
-    
-    <section id="about">
-        <h2>About</h2>
-        <p>I'm a doctoral student in mathematics at the <a href="https://www.usherbrooke.ca/">University of Sherbrooke</a> under the supervision of <a href="https://math.usherbrooke.ca/jpburelle/">Jean-Philippe Burelle</a> and <a href="https://www.usherbrooke.ca/mathematiques/nous-joindre/personnel/corps-professoral/professeurs/maxence-mayrand">Maxence Mayrand</a>.</p>
-    </section>
-    
-    <section id="contact">
+    <main>
         <h2>Contact Information</h2>
-        <div class="contact-info">
-            <a href="mailto:mohamed.moussadek.maiza@usherbrooke.ca">mohamed.moussadek.maiza@usherbrooke.ca</a>
-            <a href="mailto:moussadekmaiza@gmail.com">moussadekmaiza@gmail.com</a>
-        </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Mohamed Maiza</p>
-    </footer>
+        <table class="contact-table">
+            <tr>
+                <td>Email:</td>
+                <td>mohamed.moussadek.maiza [at] usherbrooke [dot] ca</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>moussadekmaiza [at] gmail [dot] com</td>
+            </tr>
+            <tr>
+                <td>Office:</td>
+                <td>D4-2018</td>
+            </tr>
+            <tr>
+                <td>Mail:</td>
+                <td>
+                    University of Sherbrooke<br>
+                    Department of Mathematics<br>
+                    2500 boul. de l'Université<br>
+                    Sherbrooke, QC J1K 2R1
+                </td>
+            </tr>
+        </table>
+    </main>
 </body>
 </html>
