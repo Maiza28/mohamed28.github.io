@@ -13,108 +13,213 @@
         
         body {
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 16px;
-            line-height: 1.6;
-            color: #000;
-            background-color: #fff;
-            max-width: 700px;
+            font-size: 17px;
+            line-height: 1.65;
+            color: #222;
+            background-color: #fafafa;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 750px;
             margin: 0 auto;
-            padding: 60px 30px;
+            padding: 50px 30px;
+            background-color: #fff;
+            box-shadow: 0 0 30px rgba(0,0,0,0.05);
+            min-height: 100vh;
         }
         
         header {
-            margin-bottom: 50px;
+            margin-bottom: 45px;
+            padding-bottom: 35px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .header-top {
+            display: flex;
+            align-items: flex-start;
+            gap: 35px;
+            margin-bottom: 25px;
         }
         
         .profile-image {
-            float: left;
-            width: 200px;
-            height: auto;
-            margin-right: 30px;
-            margin-bottom: 20px;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            flex-shrink: 0;
+            border: 1px solid #ddd;
+        }
+        
+        .header-text {
+            flex: 1;
+            padding-top: 10px;
         }
         
         h1 {
-            font-size: 32px;
+            font-size: 36px;
             font-weight: normal;
-            margin-bottom: 20px;
-            color: #000;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+            letter-spacing: -0.3px;
+        }
+        
+        .title {
+            font-size: 19px;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 6px;
+        }
+        
+        .affiliation {
+            font-size: 17px;
+            color: #666;
         }
         
         .intro {
             text-align: justify;
-            margin-bottom: 20px;
+            color: #333;
         }
         
         .intro p {
-            margin-bottom: 15px;
+            margin-bottom: 14px;
         }
         
-        a {
-            color: #00e;
+        nav {
+            margin: 35px 0;
+            padding: 18px 0;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+        }
+        
+        nav a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 5px 10px;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+        
+        nav a:hover {
+            border-bottom-color: #0066cc;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 18px;
+            color: #1a1a1a;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        p a {
+            color: #0066cc;
             text-decoration: none;
         }
         
-        a:hover {
+        p a:hover {
             text-decoration: underline;
         }
         
         .cv-link {
-            display: block;
             margin: 20px 0;
-        }
-        
-        h2 {
-            font-size: 20px;
-            font-weight: normal;
-            margin-top: 40px;
-            margin-bottom: 15px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
+            font-size: 17px;
         }
         
         .contact-table {
-            margin-top: 20px;
+            width: 100%;
+            margin-top: 15px;
             border-collapse: collapse;
         }
         
+        .contact-table tr {
+            line-height: 1.8;
+        }
+        
         .contact-table td {
-            padding: 5px 20px 5px 0;
+            padding: 6px 0;
             vertical-align: top;
         }
         
         .contact-table td:first-child {
             font-weight: normal;
-            text-align: left;
-            white-space: nowrap;
+            color: #555;
+            width: 100px;
+            padding-right: 15px;
         }
         
-        .clearfix::after {
-            content: "";
-            display: table;
-            clear: both;
+        .contact-table td:last-child {
+            color: #333;
+        }
+        
+        footer {
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #888;
+            font-size: 15px;
         }
         
         @media (max-width: 768px) {
-            body {
-                padding: 40px 20px;
+            .container {
+                padding: 35px 25px;
+            }
+            
+            .header-top {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
             }
             
             .profile-image {
-                float: none;
-                display: block;
-                margin: 0 auto 30px;
-                max-width: 100%;
+                width: 160px;
+                height: 160px;
             }
             
             h1 {
-                text-align: center;
+                font-size: 30px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 12px;
+                align-items: center;
+            }
+            
+            .intro {
+                text-align: left;
+            }
+            
+            .contact-table td:first-child {
+                width: 80px;
             }
         }
         
         @media print {
             body {
+                background-color: white;
+            }
+            
+            .container {
+                box-shadow: none;
                 padding: 20px;
+            }
+            
+            nav {
+                display: none;
             }
             
             a {
@@ -125,47 +230,68 @@
     </style>
 </head>
 <body>
-    <header class="clearfix">
-        <img src="./Maiza Mohamed.jpg" alt="Mohamed Maiza" class="profile-image">
-        
-        <h1>Mohamed Maiza</h1>
-        
-        <div class="intro">
-            <p>I am a doctoral student in mathematics at the <a href="https://www.usherbrooke.ca/">University of Sherbrooke</a> under the supervision of <a href="https://math.usherbrooke.ca/jpburelle/">Jean-Philippe Burelle</a> and <a href="https://www.usherbrooke.ca/mathematiques/nous-joindre/personnel/corps-professoral/professeurs/maxence-mayrand">Maxence Mayrand</a>.</p>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <img src="./Maiza Mohamed.jpg" alt="Mohamed Maiza" class="profile-image">
+                <div class="header-text">
+                    <h1>Mohamed Maiza</h1>
+                    <div class="title">PhD Student in Mathematics</div>
+                    <div class="affiliation">University of Sherbrooke</div>
+                </div>
+            </div>
             
-            <p>My area of research is symplectic geometry and topological quantum field theories. I'm particularly interested in Lax-Kirchhoff moduli spaces and their connections to quasi-Hamiltonian and Hamiltonian structures.</p>
-        </div>
+            <div class="intro">
+                <p>I am a doctoral student in mathematics at the <a href="https://www.usherbrooke.ca/">University of Sherbrooke</a> under the supervision of <a href="https://math.usherbrooke.ca/jpburelle/">Jean-Philippe Burelle</a> and <a href="https://www.usherbrooke.ca/mathematiques/nous-joindre/personnel/corps-professoral/professeurs/maxence-mayrand">Maxence Mayrand</a>.</p>
+                
+                <p>My area of research is symplectic geometry and topological quantum field theories. I'm particularly interested in Lax-Kirchhoff moduli spaces and their connections to quasi-Hamiltonian and Hamiltonian structures.</p>
+            </div>
+            
+            <div class="cv-link">
+                Here is my <a href="Cv.html">CV</a>.
+            </div>
+        </header>
         
-        <div class="cv-link">
-            Here is my <a href="Cv.html">CV</a>.
-        </div>
-    </header>
-    
-    <main>
-        <h2>Contact Information</h2>
-        <table class="contact-table">
-            <tr>
-                <td>Email:</td>
-                <td>mohamed.moussadek.maiza [at] usherbrooke [dot] ca</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>moussadekmaiza [at] gmail [dot] com</td>
-            </tr>
-            <tr>
-                <td>Office:</td>
-                <td>D4-2018</td>
-            </tr>
-            <tr>
-                <td>Mail:</td>
-                <td>
-                    University of Sherbrooke<br>
-                    Department of Mathematics<br>
-                    2500 boul. de l'Université<br>
-                    Sherbrooke, QC J1K 2R1
-                </td>
-            </tr>
-        </table>
-    </main>
+        <nav>
+            <ul>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Teaching.html">Teaching</a></li>
+                <li><a href="Cv.html">CV</a></li> 
+            </ul>    
+        </nav>
+        
+        <main>
+            <section id="contact">
+                <h2>Contact Information</h2>
+                <table class="contact-table">
+                    <tr>
+                        <td>Email:</td>
+                        <td>mohamed.moussadek.maiza [at] usherbrooke [dot] ca</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>moussadekmaiza [at] gmail [dot] com</td>
+                    </tr>
+                    <tr>
+                        <td>Office:</td>
+                        <td>D4-2018</td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td>
+                            University of Sherbrooke<br>
+                            Department of Mathematics<br>
+                            2500 boul. de l'Université<br>
+                            Sherbrooke, QC J1K 2R1
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Mohamed Maiza</p>
+        </footer>
+    </div>
 </body>
 </html>
